@@ -1,5 +1,9 @@
-import React from 'react';
-import Banner from './Banner';
+import React from "react";
+import Banner from "./Banner";
+import Welcome from "./Welcome";
+import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
+import News from "./News/News";
 import About from '../About/About';
 import Service from '../Service/Service';
 import Faq from '../Faq/Faq';
@@ -173,6 +177,10 @@ function Home(props) {
 
     <Team/>
     
+      <Welcome />
+      <News />
+      <Contact />
+      <Footer />
     </div>
   );
 }
