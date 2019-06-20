@@ -4,7 +4,7 @@ function Banner(props) {
   return (
   	<div>
   	 <section className="welcome_area clearfix dzsparallaxer auto-init none fullwidth mode-scroll animation-engine-js dzsprx-readyall" data-options="{direction: &quot;normal&quot;}" id="home">
-        <div className="divimage dzsparallaxer--target" style={{width: '101%', height: '130%', backgroundImage: 'url(/img/bg-img/bg-5-2.png)', transform: 'translate3d(0px, -104px, 0px)'}}></div>
+        <div className="divimage dzsparallaxer--target" style={{width: '101%', height: '130%', backgroundImage: 'url(img/bg-img/bg-5-2.png)', transform: 'translate3d(0px, -104px, 0px)'}}></div>
         <div className="hero-content transparent">
             <div className="container h-100">
                 <div className="row h-100 align-items-center">
@@ -13,7 +13,7 @@ function Banner(props) {
                             <div className="promo-section">
                                 <div className="integration-link dark-int">
                                     <span className="integration-icon">
-                                        <img src="/js/img-dollar.svg" width="24" height="24" alt="" />
+                                        <img src="js/img-dollar.svg" width="24" height="24" alt="" />
                                     </span>
                                     <span className="integration-text">Discover a new ways to enjoy your World!</span>
                                 </div>

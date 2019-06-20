@@ -7,7 +7,7 @@ function Header(props) {
         <div className="classy-nav-container light breakpoint-off dark left">
             <div className="container">
                 <nav className="classy-navbar justify-content-between" id="dreamNav">
-                    <a className="nav-brand light" href="https://shrchato.netlify.com/index-demo-3.html#"><img src="/js/logo.png" alt="logo" /> Shrchato</a>
+                    <a className="nav-brand light" href="https://shrchato.netlify.com/index-demo-3.html#"><img src="js/logo.png" alt="logo" /> Shrchato</a>
                     <div className="classy-navbar-toggler demo">
                         <span className="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
