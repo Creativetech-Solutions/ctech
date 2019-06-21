@@ -24,7 +24,6 @@ function Contact(props) {
               </div>
             </div>
           </div>
-
           <div className='row justify-content-center'>
             <div className='col-12 col-md-10 col-lg-8'>
               <div className='contact_form'>

@@ -4,6 +4,8 @@ import Welcome from "./Welcome";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
 import News from "./News/News";
+import OurTeam from "./OurTeam/OurTeam";
+import "./Home.css";
 
 function Home(props) {
   return (
@@ -11,6 +13,7 @@ function Home(props) {
       <Banner />
       <Welcome />
       <News />
+      <OurTeam />
       <Contact />
       <Footer />
     </div>
