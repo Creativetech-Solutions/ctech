@@ -47,6 +47,7 @@
 ***/
 
 @import 'bootstrap.min.css';
+@import 'bicon.min';
 @import 'animate.css';
 @import 'about-sonar.css';
 @import 'classy-nav.min.css';
@@ -54,10 +55,17 @@
 @import 'owl.carousel.min.css';
 @import 'magnific-popup.css';
 @import 'animated-headline.css';
+@import 'font-awesome';
 @import 'font-awesome.min.css';
 @import 'font-icons.css';
 @import 'cryptocoins.css';
 @import 'themify-icons.css';
+@import 'jquery.fancybox';
+@import 'nouislider';
+@import 'owl.carousel';
+@import 'owl.theme';
+@import 'reset';
+@import 'style6';
 
 /*** 
 

@@ -7,7 +7,8 @@ import News from "./News/News";
 import About from '../About/About';
 import Service from '../Service/Service';
 import Faq from '../Faq/Faq';
-import Team from '../Team/Team';
+import OurTeam from "./OurTeam/OurTeam";
+import "./Home.css";
 
 function Home(props) {
   return (
@@ -135,9 +136,8 @@ function Home(props) {
         </div>
     </section>
 
-    <Team/>
-    
       <News />
+      <OurTeam />
       <Contact />
       <Footer />
     </div>
