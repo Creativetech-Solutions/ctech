@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
     });    
     if (window.location.hash) {
         jQuery(".o-lecturers-teacher").removeClass("active");
-        jQuery("a[href*=" + window.location.hash + "]").parent().addClass('active');
+        jQuery("a[href*=" + window.location.data-hash + "]").parent().addClass('active');
     }
 		
 });

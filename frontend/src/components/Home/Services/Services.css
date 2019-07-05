@@ -1,0 +1,93 @@
+.light-version .our_services_area {
+  padding-bottom: 70px;
+}
+
+.section-padding-100-0 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.clearfix-sp {
+  clear: both;
+}
+
+.dream-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.service_single_content {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.light-version .service_single_content.food {
+  background: #5a20c6;
+  padding-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.light-version .service_single_content.food h6 {
+  color: #fff;
+}
+.light-version .service_single_content.food h5 {
+  position: absolute;
+  top: 17px;
+  right: -49px;
+  transform: rotate(41deg);
+  background: red;
+  padding: 10px 58px;
+  color: #fff;
+}
+
+.service_single_content .service_icon i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  display: block;
+}
+.embed-video {
+  max-width: 250px !important;
+  height: auto !important;
+}
+.light-version .how .service_single_content {
+  background: #fff;
+}
+.how .service_icon {
+  padding: 30px;
+  position: relative;
+  border: 2px solid #00dcd8;
+  background-image: linear-gradient(to right, #21d397 0%, #7450fe 100%);
+  max-width: 140px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.how .service_single_content:hover .service_icon {
+  background: #fff;
+}
+.how .service_single_content:hover .white-icon {
+  visibility: hidden;
+}
+
+.section-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.section-heading > p {
+  margin-bottom: 0;
+  line-height: 2;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}

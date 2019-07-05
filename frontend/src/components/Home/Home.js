@@ -1,20 +1,23 @@
 import React from "react";
-import Banner from "./Banner";
-import Welcome from "./Welcome";
-import Footer from "./Footer/Footer";
-import Contact from "./Contact/Contact";
-import News from "./News/News";
+import Header from "../Layout/Header";
+import Banner from "../Layout/Banner";
+import ChooseUs from "./ChooseUs/ChooseUs";
+import WeDo from "./WeDo/WeDo";
+import Footer from "../Layout/Footer";
 import OurTeam from "./OurTeam/OurTeam";
-import "./Home.css";
+import Contact from "./Contact/Contact";
+import Services from "./Services/Services";
 
 function Home(props) {
   return (
     <div>
-      <Banner />
-      <Welcome />
-      <News />
-      <OurTeam />
-      <Contact />
+      <Header />
+      <Banner id='banner' />
+      <ChooseUs />
+      <WeDo />
+      <Services id='services' />
+      <OurTeam id='team' />
+      <Contact id='contact' />
       <Footer />
     </div>
   );

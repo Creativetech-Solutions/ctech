@@ -47,7 +47,7 @@
 ***/
 
 @import 'bootstrap.min.css';
-@import 'bicon.min';
+/* @import 'bicon.min'; */
 @import 'animate.css';
 @import 'about-sonar.css';
 @import 'classy-nav.min.css';
@@ -1585,8 +1585,8 @@ ol {
     border-radius: 100px;
 }
 .integration-link.dark-int:before{
-    background-image: linear-gradient(to bottom right,#766ee6 0,#3540b0);
-}
+    background-image: linear-gradient(to bottom right,#c6c2f3 0,#6772e4);
+    margin-top:25px;}
 .integration-link.dark-int .integration-text{
     color: #fff
 }
@@ -7545,4 +7545,7 @@ body.light-version {
 }
 .preview-demo:hover{
     color: #333
+}
+.site-menus a:hover {
+  cursor: pointer;
 }

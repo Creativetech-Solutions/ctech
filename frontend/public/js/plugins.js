@@ -24,7 +24,8 @@
  * Copyright (c) 2014 Dmitry Semenov; */
 (function (e) {
     "function" == typeof define && define.amd ? define(["jquery"], e) : "object" == typeof exports ? e(require("jquery")) : e(window.jQuery || window.Zepto)
-})(function (e) {
+})
+(function (e) {
     var t, n, i, o, r, a, s, l = "Close",
         c = "BeforeClose",
         d = "AfterClose",
