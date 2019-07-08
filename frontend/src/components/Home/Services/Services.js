@@ -5,8 +5,6 @@ import "./Services.css";
 class Services extends Component {
   constructor(props) {
     super(props);
-
-    console.log(this.props.id);
     this.state = {
       services: null,
       id: this.props.id,

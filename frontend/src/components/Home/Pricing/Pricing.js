@@ -7,7 +7,7 @@ class Pricing extends Component {
   render() {
     return (
       <div
-        id='pricing2'
+        id='pricing'
         className='section-padding-100-0'
         style={{ paddingTop: "5%" }}
       >

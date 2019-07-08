@@ -18,7 +18,7 @@ function Home(props) {
       <WeDo />
       <Services id='services' />
       <OurTeam id='team' />
-      <Pricing id='pricing2' />
+      <Pricing id='pricing' />
       <Contact id='contact' />
       <Footer />
     </div>
