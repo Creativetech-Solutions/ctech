@@ -7,6 +7,7 @@ import Footer from "../Layout/Footer";
 import OurTeam from "./OurTeam/OurTeam";
 import Contact from "./Contact/Contact";
 import Services from "./Services/Services";
+import Pricing from "./Pricing/Pricing";
 
 function Home(props) {
   return (
@@ -17,6 +18,7 @@ function Home(props) {
       <WeDo />
       <Services id='services' />
       <OurTeam id='team' />
+      <Pricing id='pricing2' />
       <Contact id='contact' />
       <Footer />
     </div>

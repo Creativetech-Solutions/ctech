@@ -11,28 +11,24 @@ function Header(props) {
               className='classy-navbar justify-content-between'
               id='dreamNav'
             >
-              <div className='promo-section'>
-                <div className='integration-link dark-int'>
-                  <Link
-                    activeClass='active'
-                    to='home'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    <img
-                      style={{
-                        width: "250px",
+              <Link
+                activeClass='active'
+                to='home'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <img
+                  style={{
+                    width: "250px",
 
-                        marginTop: "8px",
-                      }}
-                      src='img/logo.png'
-                      alt='logo'
-                    />
-                  </Link>
-                </div>
-              </div>
+                    marginTop: "8px",
+                  }}
+                  src='img/logo.png'
+                  alt='logo'
+                />
+              </Link>
 
               <div className='classy-menu'>
                 <div className='classycloseIcon'>
@@ -68,9 +64,16 @@ function Header(props) {
                       </Link>
                     </li>
                     <li>
-                      <a href='https://creativetech-solutions.com/pricing/'>
+                      <Link
+                        activeClass='active'
+                        to='pricing2'
+                        spy={true}
+                        smooth={true}
+                        offset={-10}
+                        duration={500}
+                      >
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a href='https://creativetech-solutions.com/our-portfolio'>

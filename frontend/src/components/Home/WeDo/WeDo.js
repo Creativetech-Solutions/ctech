@@ -48,7 +48,7 @@ class WeDo extends Component {
               {this.state.services === null && <p>Loading Services...</p>}
               {this.state.services &&
                 this.state.services.map(service => (
-                  <div className='col-lg-4 col-md-6 col-xs-12'>
+                  <div className='col-lg-4 col-md-6 col-xs-12' key={service.id}>
                     <div className='news-post' style={{ height: "360px" }}>
                       <div
                         className='news-post-image'
@@ -60,7 +60,7 @@ class WeDo extends Component {
 
                         <img
                           src={"img/" + service.avatar}
-                          alt='Image'
+                          alt={service.name}
                           className='img-responsive'
                           style={{
                             marginLeft: "auto",

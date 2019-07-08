@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import "./OurTeam.css";
-import { get } from "../../../Api";
+// import { get } from "../../../Api";
 import Employee from "./Employee";
 
 class OurTeam extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      teams: null,
-    };
-  }
-  async componentDidMount() {
-    const teams = (await get("team")).data.our_teams;
-    // console.log(teams);
-    this.setState({
-      teams,
-    });
-  }
+  //   this.state = {
+  //     teams: null,
+  //   };
+  // }
+  // async componentDidMount() {
+  //   const teams = (await get("team")).data.our_teams;
+  //   // console.log(teams);
+  //   this.setState({
+  //     teams,
+  //   });
+  // }
 
   render() {
     return (
@@ -42,34 +42,7 @@ class OurTeam extends Component {
                         <h3>
                           Alaxander Louise<span>UI-UX Developer</span>
                         </h3>
-                        <div className='social-icons'>
-                          <ul>
-                            <li>
-                              <a
-                                className='fa fa-facebook'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-instagram'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-google-plus'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-twitter'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                          </ul>
-                        </div>
+
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
@@ -99,34 +72,7 @@ class OurTeam extends Component {
                         <h3>
                           Sarah Johnson<span>Graphic Designer</span>
                         </h3>
-                        <div className='social-icons'>
-                          <ul>
-                            <li>
-                              <a
-                                className='fa fa-facebook'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-instagram'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-google-plus'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-twitter'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                          </ul>
-                        </div>
+
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
@@ -156,34 +102,7 @@ class OurTeam extends Component {
                         <h3>
                           Rebeca Addam<span>Developer</span>
                         </h3>
-                        <div className='social-icons'>
-                          <ul>
-                            <li>
-                              <a
-                                className='fa fa-facebook'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-instagram'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-google-plus'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-twitter'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                          </ul>
-                        </div>
+
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
@@ -213,34 +132,7 @@ class OurTeam extends Component {
                         <h3>
                           Leonardo Bonucci<span>Developer</span>
                         </h3>
-                        <div className='social-icons'>
-                          <ul>
-                            <li>
-                              <a
-                                className='fa fa-facebook'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-instagram'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-google-plus'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-twitter'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                          </ul>
-                        </div>
+
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
@@ -267,34 +159,7 @@ class OurTeam extends Component {
                         <h3>
                           Barry John<span>CEO</span>
                         </h3>
-                        <div className='social-icons'>
-                          <ul>
-                            <li>
-                              <a
-                                className='fa fa-facebook'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-instagram'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-google-plus'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                            <li>
-                              <a
-                                className='fa fa-twitter'
-                                href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
-                              />
-                            </li>
-                          </ul>
-                        </div>
+
                         <p>
                           Lorem Ipsum is simply dummy text of the printing and
                           typesetting industry. Lorem Ipsum has been the
@@ -370,15 +235,93 @@ class OurTeam extends Component {
                       </div>
                     ))} */}
                   </div>
+                  <div
+                    className='owl-item active'
+                    style={{ width: "684px", marginRight: "0px" }}
+                  >
+                    <div className='o-slide-item' data-hash='itemslide6'>
+                      <div className='detail-teacher-img'>
+                        <img
+                          src='img/Sydney_Delosh_NEW.jpg'
+                          alt='Sydney Delosh'
+                        />
+                      </div>
+                      <div className='teacher-detail'>
+                        <h3>
+                          Sydney Delosh<span>Senior Account Manager</span>
+                        </h3>
+
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard.
+                        </p>
+                        <a
+                          className='btn'
+                          href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
+                        >
+                          View details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className='owl-item active'
+                    style={{ width: "684px", marginRight: "0px" }}
+                  >
+                    <div className='o-slide-item' data-hash='itemslide7'>
+                      <div className='detail-teacher-img'>
+                        <img src='img/Allison-Lautz.jpg' alt='Sydney Delosh' />
+                      </div>
+                      <div className='teacher-detail'>
+                        <h3>
+                          Allison Lautz
+                          <span>Senior Front End Developer</span>
+                        </h3>
+
+                        <p>
+                          “The important thing is not to stop questioning.
+                          Curiosity has its own reason for existing.”
+                        </p>
+                        <a
+                          className='btn'
+                          href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
+                        >
+                          View details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className='owl-item active'
+                    style={{ width: "684px", marginRight: "0px" }}
+                  >
+                    <div className='o-slide-item' data-hash='itemslide8'>
+                      <div className='detail-teacher-img'>
+                        <img src='img/Mike_Santoro.jpg' alt='Sydney Delosh' />
+                      </div>
+                      <div className='teacher-detail'>
+                        <h3>
+                          Mike Santoro
+                          <span>HR Manager</span>
+                        </h3>
+
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard.
+                        </p>
+                        <a
+                          className='btn'
+                          href='https://www.pixxett.com/htmldemos/startup-pro/index6.html#'
+                        >
+                          View details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              {/* <div className='owl-controls'>
-              <div className='owl-nav'>
-                <div className='owl-prev' style={{ display: "none" }} />
-                <div className='owl-next' style={{ display: "none" }} />
-              </div>
-              <div className='owl-dots' style={{ display: "none" }} />
-            </div> */}
             </div>
           </div>
         </div>

@@ -6,23 +6,25 @@ class Services extends Component {
   constructor(props) {
     super(props);
 
+    console.log(this.props.id);
     this.state = {
       services: null,
+      id: this.props.id,
     };
   }
-  async componentDidMount() {
-    const services = (await get("service")).data.services;
-    // console.log(services);
-    this.setState({
-      services,
-    });
-  }
+  // async componentDidMount() {
+  //   const services = (await get("service")).data.services;
+  //   // console.log(services);
+  //   this.setState({
+  //     services,
+  //   });
+  // }
 
   render() {
     return (
       <section
         className='our_services_area section-padding-100-0 clearfix'
-        id='services'
+        id={this.state.id}
       >
         <div className='container'>
           <div className='section-heading text-center'>

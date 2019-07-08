@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
+import { post } from "../../../Api";
 
 class Contact extends Component {
   constructor() {
@@ -17,27 +18,26 @@ class Contact extends Component {
   onChange(e) {
     this.setState({
       name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
+      email: document.getElementById("emailid").value,
       subject: document.getElementById("subject").value,
       msg: document.getElementById("msg").value,
     });
   }
+  handleSubmit(e) {
+    e.preventDefault();
+    e.target.reset();
+  }
 
-  onSubmit(e) {
+  async onSubmit(e) {
     e.preventDefault();
     const contactData = {
       name: this.state.name,
-      // email: this.state.email,
-      // subject: this.state.subject,
-      // msg: this.state.msg,
-
-      description: this.state.email,
-      avatar: this.state.subject,
-      status: this.state.msg,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.msg,
     };
-    axios
-      .post("http://localhost:8000/api/service", contactData)
-      .then(res => console.log(res.data));
+
+    await post("message", contactData);
   }
 
   render() {
@@ -71,73 +71,60 @@ class Contact extends Component {
             <div className='row justify-content-center'>
               <div className='col-12 col-md-10 col-lg-8'>
                 <div className='contact_form'>
-                  <form
-                    onSubmit={this.onSubmit}
-                    method='post'
-                    id='main_contact_form'
-                  >
+                  <form onSubmit={this.onSubmit} method='post' id='contact'>
                     <div className='row'>
-                      <div className='col-12'>
-                        <div id='success_fail_info' />
-                      </div>
-
                       <div className='col-12 col-md-6'>
                         <div className='group fadeInUp' data-wow-delay='0.2s'>
+                          <label>Name</label> <br />
                           <input
                             type='text'
                             name='name'
                             id='name'
                             value={this.state.name}
                             onChange={this.onChange}
-                            required=''
+                            required
                           />
-                          <span className='highlight' />
-                          <span className='bar' />
-                          <label>Name</label>
                         </div>
                       </div>
                       <div className='col-12 col-md-6'>
-                        <div className='group fadeInUp' data-wow-delay='0.3s'>
+                        <div className='group fadeInUp' data-wow-delay='0.2s'>
+                          <label>Email</label> <br />
                           <input
                             type='text'
                             name='email'
-                            id='email'
-                            value={this.state.email}
+                            id='emailid'
+                            value={this.state.emailid}
                             onChange={this.onChange}
-                            required=''
+                            pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+                            required
                           />
-                          <span className='highlight' />
-                          <span className='bar' />
-                          <label>Email</label>
                         </div>
                       </div>
                       <div className='col-12'>
                         <div className='group fadeInUp' data-wow-delay='0.4s'>
+                          <label>Subject</label>
+                          <br />
                           <input
                             type='text'
                             name='subject'
                             id='subject'
                             value={this.state.subject}
                             onChange={this.onChange}
-                            required=''
+                            required
                           />
-                          <span className='highlight' />
-                          <span className='bar' />
-                          <label>Subject</label>
                         </div>
                       </div>
                       <div className='col-12'>
                         <div className='group fadeInUp' data-wow-delay='0.5s'>
+                          <label>Message</label>
+                          <br />
                           <textarea
                             name='message'
                             id='msg'
                             value={this.state.msg}
                             onChange={this.onChange}
-                            required=''
+                            required
                           />
-                          <span className='highlight' />
-                          <span className='bar' />
-                          <label>Message</label>
                         </div>
                       </div>
                       <div
