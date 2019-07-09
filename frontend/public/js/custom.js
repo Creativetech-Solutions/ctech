@@ -103,10 +103,10 @@
 	
 	// Highlight the top nav as scrolling occurs
 
-	$('body').scrollspy({
-    target: '.navbar-default',
-    offset: 70
-	});
+	//$('body').scrollspy({
+    //target: '.navbar-default',
+    //offset: 70
+	//});
 	// Closes the Responsive Menu on Menu Item Click
 
 	$('.navbar-collapse ul li a:not(.dropdown-toggle)').on('click', function() {
