@@ -65,9 +65,16 @@ function Footer(props) {
                         </Link>
                       </li>
                       <li>
-                        <a href='https://creativetech-solutions.com/pricing/'>
+                        <Link
+                          activeClass='active'
+                          to='pricing'
+                          spy={true}
+                          smooth={true}
+                          offset={-10}
+                          duration={500}
+                        >
                           Pricing
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a href='http://creativetech-solutions.com/our-portfolio/'>

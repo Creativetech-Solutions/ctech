@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { get } from "../../../Api";
-
 import "./Pricing.css";
 
 class Pricing extends Component {
@@ -9,7 +7,7 @@ class Pricing extends Component {
       <div
         id='pricing'
         className='section-padding-100-0'
-        style={{ paddingTop: "5%" }}
+        style={{ paddingTop: "5%", backgroundColor: "" }}
       >
         <h2>PRICING</h2>
 
@@ -48,7 +46,7 @@ class Pricing extends Component {
 
         <div
           className='container text-center'
-          style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "#66548b" }}
         >
           <h1 className='headline hyper hairline' style={{ padding: "80px" }}>
             Price does not effects the quality we deliver.
@@ -57,7 +55,7 @@ class Pricing extends Component {
 
         <div className='row vertical-top' style={{ padding: "80px" }}>
           <div className='col-md-3  text-center'>
-            <img alt='' src='img/Wordpress-logo.png' className='aligncenter' />
+            <img alt='' src='img/wordpress-logo.png' className='aligncenter' />
 
             <h2>WordPress</h2>
             <h4>

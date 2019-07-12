@@ -9,7 +9,9 @@ use JWTAuth;
 class ServicesController extends Controller
 {
     public function add(Request $request)
-    {
+    {dd($request->input());
+// return view ("services");
+
         $service = new Services();
         $service->name = $request->name;
         $service->description = $request->description;

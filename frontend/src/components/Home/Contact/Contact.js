@@ -42,7 +42,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div className='our_blog_area news clearfix section-padding-0-70'>
         <div className='contact_us_area section-padding-100-0' id='contact'>
           <div className='container'>
             <div className='row'>

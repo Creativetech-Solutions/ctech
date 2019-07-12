@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Backpack\CRUD\CrudTrait;
+use Backpack\CRUD\CrudTrait; 
 
 class Services extends Model
 {
@@ -15,13 +15,14 @@ class Services extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'services';
+   
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ["name", "description", "avatar", "status"];
-    // protected $hidden = [];
-    // protected $dates = [];
+   
+    protected $fillable = ["name", "description" , "avatar", "status" ];
+
+   
 
     /*
     |--------------------------------------------------------------------------

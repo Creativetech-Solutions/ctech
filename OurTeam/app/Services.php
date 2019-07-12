@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Services extends Model
 {
-     protected $fillable = [
+    // protected $table="services";
+    protected $fillable = [
     'name',  'description', 'avatar', 'status'
 ];
 }

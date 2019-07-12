@@ -66,7 +66,7 @@ function Header(props) {
                     <li>
                       <Link
                         activeClass='active'
-                        to='pricing2'
+                        to='pricing'
                         spy={true}
                         smooth={true}
                         offset={-10}
